@@ -26,6 +26,8 @@ public class Automotora {
         
         Cliente cliente = new Cliente();
         
+        Vehiculo auto = new Vehiculo();
+        
         
         
         
@@ -44,6 +46,7 @@ public class Automotora {
             switch(opcion){
                 case 1:
                     
+                    entrada.nextLine();
                     
                     String apellido = "";
                     
@@ -64,21 +67,49 @@ public class Automotora {
                     System.out.println("Ingrese el rut del usuario: ");
                     pCliente.setRut(entrada.next());
                     
-                    System.out.println("Ingrese el telefono del cliente:");
-                    pCliente.setTelefono(entrada.nextInt());
+                    String telefonoCliente = "";
+                    while(true){
+                        
+                        System.out.println("Ingrese el telefono del cliente:"); 
+                        telefonoCliente = entrada.nextLine();
+                        System.out.println("----> " + telefonoCliente);
+                        if(telefonoCliente.length() > 0){
+                            pCliente.setTelefono(Integer.parseInt(telefonoCliente));
+                            break;
+                        }else{
+                            System.out.println("Debe ingresar un numero de telefono.");
+                        }
+                    }
+                    
+                    
+                    
                     
                     
                     int anio,mes,dia = 0;
                     
+                    while(true){
+                        System.out.println("Ingrese el año:");
+                        anio = entrada.nextInt();
+
+                        System.out.println("Ingrese el mes:");
+                        mes = entrada.nextInt();
+
+                        System.out.println("Ingrese el dia:");
+                        dia = entrada.nextInt();
+                        
+                        LocalDate fechaIngresada;
+                        
+                        fechaIngresada = LocalDate.of(anio,mes,dia);
+                        
+                        if(!LocalDate.now().isBefore(fechaIngresada)){
+                            break;
+                        }else{
+                            System.out.println("Fecha no valida.");
+                        }
                     
-                    System.out.println("Ingrese el año:");
-                    anio = entrada.nextInt();
-    
-                    System.out.println("Ingrese el mes:");
-                    mes = entrada.nextInt();
-                                        
-                    System.out.println("Ingrese el dia:");
-                    dia = entrada.nextInt();
+                    }
+                    
+
                     
                     pCliente.setFecha_nacimiento(LocalDate.of(anio,mes,dia));
                     
@@ -91,7 +122,12 @@ public class Automotora {
                     
                 case 2:
                     System.out.println("opcion 2");
-                    cliente.sumar();
+                    auto.setMarca("Toyota");
+                    System.out.println(auto.verMarcaVehiculo());
+                    
+                    auto.mostrarNombrePersona("Pedro", true, pCliente);
+                    auto.setPrecio(5000);
+                    auto.calcularIvaVehiculo();
                     break;
                 case 3:
                     System.out.println("opcion 3");

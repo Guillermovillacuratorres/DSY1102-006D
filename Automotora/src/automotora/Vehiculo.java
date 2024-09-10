@@ -83,4 +83,20 @@ public class Vehiculo {
         return "Marca " + marca + " Patente: " +
                 patente + " Precio: " + precio;
     }
+    
+    
+    public String verMarcaVehiculo(){
+        return "La marca del vehiculo es: "  + marca;
+    }
+    
+    public void mostrarNombrePersona(String nombre, boolean casado, Persona p1){
+        System.out.println("El nombre de la persona es: " + p1.getNombre());
+    }
+    
+    public void calcularIvaVehiculo(){
+        System.out.println("Precio vehiculo neto: " + precio);
+        System.out.println("Precio vehiculo con IVA: " + precio * 1.19);
+    }
+    
+    
 }
