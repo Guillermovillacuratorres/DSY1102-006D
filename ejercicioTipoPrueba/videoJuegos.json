@@ -1,0 +1,14 @@
+[
+  {
+    "idJuego": 1,
+    "stock": 1,
+    "tituloJuego": "Ejemplo",
+    "categoriaJuego": "Ejemplo"
+  },
+  {
+    "idJuego": 1,
+    "stock": 1,
+    "tituloJuego": "asd",
+    "categoriaJuego": "asd"
+  }
+]
