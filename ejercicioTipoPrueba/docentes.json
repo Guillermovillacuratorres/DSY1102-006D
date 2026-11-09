@@ -1,0 +1,50 @@
+[
+  {
+    "tituloProfesional": "111",
+    "sueldo": 111,
+    "idPersona": 2,
+    "edadPersona": 111,
+    "nombrePersona": "111",
+    "casado": true
+  },
+  {
+    "tituloProfesional": "111",
+    "sueldo": 111,
+    "idPersona": 4,
+    "edadPersona": 111,
+    "nombrePersona": "111",
+    "casado": true
+  },
+  {
+    "tituloProfesional": "111",
+    "sueldo": 111,
+    "idPersona": 5,
+    "edadPersona": 111,
+    "nombrePersona": "111",
+    "casado": true
+  },
+  {
+    "tituloProfesional": "111",
+    "sueldo": 111,
+    "idPersona": 6,
+    "edadPersona": 111,
+    "nombrePersona": "111",
+    "casado": true
+  },
+  {
+    "tituloProfesional": "111",
+    "sueldo": 111111,
+    "idPersona": 5,
+    "edadPersona": 111,
+    "nombrePersona": "111",
+    "casado": true
+  },
+  {
+    "tituloProfesional": "111",
+    "sueldo": 1111,
+    "idPersona": 6,
+    "edadPersona": 111,
+    "nombrePersona": "111",
+    "casado": true
+  }
+]

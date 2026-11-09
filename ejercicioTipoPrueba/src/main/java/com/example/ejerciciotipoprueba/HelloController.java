@@ -1,4 +1,4 @@
-package com.example.ejerciciotipoprueba.controller;
+package com.example.ejerciciotipoprueba;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
